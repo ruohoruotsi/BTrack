@@ -1,7 +1,7 @@
 BTrack - A Real-Time Beat Tracker
 =================================
 
-** Version 1.0.2 **
+** Version 1.0.4 **
 
 *by Adam Stark, Matthew Davies and Mark Plumbley.*
 
@@ -21,6 +21,16 @@ BTrack is made available under the GNU General Public License, version 3. Please
 
 Versions
 --------
+
+==== 1.0.4 ==== (18th June 2016)
+
+* Added option of using Kiss FFT
+* Implementation changes to improve efficiency
+
+==== 1.0.3 ==== (10th January 2016)
+
+* Fixed implementation error in complex spectral difference (thanks to @zbanks for pointing it out)
+* Small change to python module build script
 
 ==== 1.0.2 ==== (25th November 2014)
 
@@ -107,8 +117,15 @@ Requirements
 
 To compile BTrack, you will require the following libraries:
 
-* FFTW
 * libsamplerate
+
+And either:
+
+* FFTW (add the flag -DUSE_FFTW)
+
+or:
+
+* Kiss FFT (included with project, use the flag -DUSE_KISS_FFT)
 
 
 License
