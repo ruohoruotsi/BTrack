@@ -8,5 +8,12 @@ xcuserdata
 
 *.xcworkspace
 
-modules-and-plug-ins/max-external/build
-modules-and-plug-ins/python-module/build
+plugins/python-module/build
+plugins/python-module/tests/__pycache__
+build/
+plugins/max-external/btrack*/build
+plugins/max-external/btrack*/libsamplerate-install/
+plugins/max-external/btrack*/libsamplerate/
+plugins/max-external/btrack*/output/
+plugins/max-external/btrack*/max-sdk-base/
+externals/
